@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rijan Manandhar | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap");
+
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #050505;
+        color: #e2e8f0;
+        overflow-x: hidden;
+      }
+
+      .glass {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      /* FIXED GRADIENT TEXT PROBLEM */
+      .gradient-text {
+        background: linear-gradient(to right, #60a5fa, #34d399);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+      }
+
+      .glow {
+        box-shadow: 0 0 30px rgba(59, 130, 246, 0.15);
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050505;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1e293b;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #3b82f6;
+      }
+    </style>
+  </head>
+  <body class="selection:bg-blue-500 selection:text-white">
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 w-full z-50 glass py-4 px-6 flex justify-between items-center"
+    >
+      <span class="text-xl font-extrabold tracking-tighter"
+        >RIJAN<span class="text-blue-500">.</span></span
+      >
+      <div
+        class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest text-slate-400"
+      >
+        <a href="#about" class="hover:text-blue-400 transition">About</a>
+        <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+        <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+      </div>
+      <a
+        href="mailto:contact@rijan.com.np"
+        class="bg-white text-black px-6 py-2 rounded-full text-xs font-bold hover:bg-blue-500 hover:text-white transition duration-300"
+        >GET IN TOUCH</a
+      >
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="about"
+      class="min-h-screen flex flex-col justify-center items-center px-6 pt-20"
+    >
+      <div
+        class="inline-block px-4 py-1.5 mb-6 glass rounded-full text-xs font-semibold tracking-widest text-blue-400 uppercase"
+      >
+        BCA 7th Semester | Southwestern State College
+      </div>
+      <h1
+        class="text-5xl md:text-8xl font-extrabold mb-6 text-center leading-[1.1]"
+      >
+        Creating <span class="gradient-text">Scalable</span><br />Web
+        Architectures.
+      </h1>
+      <p
+        class="text-slate-400 text-lg md:text-xl max-w-2xl text-center mb-10 leading-relaxed"
+      >
+        Hi, I'm <span class="text-white font-semibold">Rijan Manandhar</span>. I
+        specialize in PHP, Laravel, and Python, focusing on building
+        high-performance applications like
+        <span class="text-blue-400">Nir Cart</span>.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a
+          href="#projects"
+          class="px-8 py-4 bg-blue-600 rounded-xl font-bold glow hover:scale-105 transition active:scale-95 text-center"
+          >View Projects</a
+        >
+        <a
+          href="#skills"
+          class="px-8 py-4 glass rounded-xl font-bold hover:bg-white/10 transition text-center"
+          >Technical Stack</a
+        >
+      </div>
+    </section>
+
+    <!-- Technical Stack -->
+    <section id="skills" class="py-24 px-6 max-w-6xl mx-auto">
+      <h2 class="text-3xl font-extrabold mb-12 flex items-center gap-4">
+        Core Expertise
+        <div class="h-[1px] w-20 bg-blue-500"></div>
+      </h2>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          class="glass p-8 rounded-2xl group hover:border-blue-500/50 transition duration-500"
+        >
+          <i class="fab fa-laravel text-4xl mb-4 text-red-500"></i>
+          <h3 class="font-bold">Laravel & PHP</h3>
+          <p class="text-xs text-slate-500 mt-2 italic">Backend Frameworks</p>
+        </div>
+        <div
+          class="glass p-8 rounded-2xl group hover:border-blue-400/50 transition duration-500"
+        >
+          <i class="fab fa-python text-4xl mb-4 text-blue-400"></i>
+          <h3 class="font-bold">Python & Java</h3>
+          <p class="text-xs text-slate-500 mt-2 italic">Application Logic</p>
+        </div>
+        <div
+          class="glass p-8 rounded-2xl group hover:border-yellow-500/50 transition duration-500"
+        >
+          <i class="fas fa-database text-4xl mb-4 text-yellow-500"></i>
+          <h3 class="font-bold">MySQL & SQL</h3>
+          <p class="text-xs text-slate-500 mt-2 italic">Database Design</p>
+        </div>
+        <div
+          class="glass p-8 rounded-2xl group hover:border-white/50 transition duration-500"
+        >
+          <i class="fas fa-terminal text-4xl mb-4 text-emerald-400"></i>
+          <h3 class="font-bold">Git & CMD</h3>
+          <p class="text-xs text-slate-500 mt-2 italic">Version Control</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section id="projects" class="py-24 px-6 max-w-6xl mx-auto">
+      <div class="flex justify-between items-end mb-12">
+        <h2 class="text-4xl font-extrabold">Featured Work</h2>
+        <span
+          class="text-slate-500 text-sm hidden sm:block italic uppercase tracking-widest"
+          >2026 Edition</span
+        >
+      </div>
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Project: Nir Cart -->
+        <div
+          class="group relative overflow-hidden rounded-3xl glass p-8 transition-all hover:bg-white/[0.05]"
+        >
+          <div class="flex justify-between items-start mb-6">
+            <div class="p-3 bg-blue-500/10 rounded-lg">
+              <i class="fas fa-shopping-cart text-blue-400 text-xl"></i>
+            </div>
+            <span
+              class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-1 rounded uppercase font-bold tracking-tighter"
+              >Live Project</span
+            >
+          </div>
+          <h3
+            class="text-2xl font-bold mb-3 group-hover:text-blue-400 transition"
+          >
+            Nir Cart
+          </h3>
+          <p class="text-slate-400 leading-relaxed mb-6 text-sm">
+            A comprehensive e-commerce platform developed with PHP and MySQL.
+            Features advanced search logic and dynamic product management.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="px-3 py-1 bg-white/5 rounded-full text-[10px] border border-white/5 uppercase"
+              >PHP</span
+            >
+            <span
+              class="px-3 py-1 bg-white/5 rounded-full text-[10px] border border-white/5 uppercase"
+              >MySQL</span
+            >
+            <span
+              class="px-3 py-1 bg-white/5 rounded-full text-[10px] border border-white/5 uppercase"
+              >JavaScript</span
+            >
+          </div>
+        </div>
+
+        <!-- Project: Himalayan Soul -->
+        <div
+          class="group relative overflow-hidden rounded-3xl glass p-8 transition-all hover:bg-white/[0.05]"
+        >
+          <div class="flex justify-between items-start mb-6">
+            <div class="p-3 bg-emerald-500/10 rounded-lg">
+              <i class="fas fa-mountain text-emerald-400 text-xl"></i>
+            </div>
+            <span
+              class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-1 rounded uppercase font-bold tracking-tighter"
+              >Portfolio</span
+            >
+          </div>
+          <h3
+            class="text-2xl font-bold mb-3 group-hover:text-emerald-400 transition text-nowrap"
+          >
+            Himalayan Soul
+          </h3>
+          <p class="text-slate-400 leading-relaxed mb-6 text-sm">
+            A photography-centric web experience documenting the peaks of Nepal.
+            Optimized for high-contrast visuals and rapid performance.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="px-3 py-1 bg-white/5 rounded-full text-[10px] border border-white/5 uppercase"
+              >UI/UX</span
+            >
+            <span
+              class="px-3 py-1 bg-white/5 rounded-full text-[10px] border border-white/5 uppercase"
+              >Responsive</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 border-t border-white/5 text-center px-6">
+      <h2 class="text-3xl font-bold mb-8">
+        Ready for the next <span class="text-blue-500">challenge</span>.
+      </h2>
+      <div class="flex justify-center gap-8 text-2xl mb-10 text-slate-500">
+        <a
+          href="https://github.com/rijan188"
+          class="hover:text-white hover:-translate-y-1 transition-all duration-300"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="#"
+          class="hover:text-blue-400 hover:-translate-y-1 transition-all duration-300"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="#"
+          class="hover:text-pink-500 hover:-translate-y-1 transition-all duration-300"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <p class="text-slate-600 text-xs tracking-widest uppercase italic">
+        © 2026 Rijan Manandhar • Kathmandu, Nepal
+      </p>
+    </footer>
+  </body>
+</html>
